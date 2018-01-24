@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { FireBaseService } from './../fire-base.service';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-directory',
@@ -12,10 +12,14 @@ import { FireBaseService } from './../fire-base.service';
 export class DirectoryComponent implements OnInit {
   projects: FirebaseListObservable<any[]>;
 
-  constructor(private fbService: FireBaseService) { }
+  constructor(private router: Router, private fbService: FireBaseService) { }
 
   ngOnInit() {
     this.projects = this.fbService.getProjects();
    }
+
+   goToProject(clickedProject) {
+     this.router.navigate(['projects', clickedProject.$key]);
+   };
 
 }
