@@ -11,6 +11,7 @@ import { routing } from './app.routing';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { FilterByGoalPipe } from './filter-by-goal.pipe';
 import { CategoryPipe } from './category.pipe';
+import { FundFormComponent } from './fund-form/fund-form.component';
 
 
 
@@ -30,7 +31,8 @@ export const firebaseConfig = {
     DirectoryComponent,
     ProjectDetailComponent,
     FilterByGoalPipe,
-    CategoryPipe
+    CategoryPipe,
+    FundFormComponent
   ],
   imports: [
     BrowserModule,

@@ -3,21 +3,18 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { FirebaseObjectObservable } from 'angularfire2/database';
 import { FireBaseService } from './../fire-base.service';
-import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-project-detail',
-  templateUrl: './project-detail.component.html',
-  styleUrls: ['./project-detail.component.scss'],
+  selector: 'app-fund-form',
+  templateUrl: './fund-form.component.html',
+  styleUrls: ['./fund-form.component.scss'],
   providers: [FireBaseService]
 })
-export class ProjectDetailComponent implements OnInit {
-  project: FirebaseObjectObservable<any[]>;
+export class FundFormComponent implements OnInit {
   projectId: string;
   projectToDisplay;
 
   constructor(
-    private router: Router,
     private route: ActivatedRoute,
     private location: Location,
     private fbService: FireBaseService
@@ -30,8 +27,6 @@ export class ProjectDetailComponent implements OnInit {
     this.projectToDisplay = this.fbService.getProjectById(this.projectId);
   }
 
-  goToFunding(){
-    this.router.navigate(['projects', this.projectId, 'fund']);
-  }
+
 
 }
