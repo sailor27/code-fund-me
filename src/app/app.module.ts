@@ -10,6 +10,7 @@ import { DirectoryComponent } from './directory/directory.component';
 import { routing } from './app.routing';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { FilterByGoalPipe } from './filter-by-goal.pipe';
+import { CategoryPipe } from './category.pipe';
 
 
 
@@ -28,7 +29,8 @@ export const firebaseConfig = {
     AppComponent,
     DirectoryComponent,
     ProjectDetailComponent,
-    FilterByGoalPipe
+    FilterByGoalPipe,
+    CategoryPipe
   ],
   imports: [
     BrowserModule,

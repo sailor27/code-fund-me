@@ -1,3 +1,25 @@
+<nav class="navbar nav navbar-expand-sm navbar-light bg-light">
+  <div id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li (click)="sortCategory('')" class="nav-item active">
+        <a class="nav-link">All <span class="sr-only">(current)</span></a>
+      </li>
+      <li (click)="sortCategory('tech')" class="nav-item">
+        <a class="nav-link">Tech</a>
+      </li>
+      <li (click)="sortCategory('home')" class="nav-item">
+        <a class="nav-link">Home</a>
+      </li>
+      <li (click)="sortCategory('music')" class="nav-item">
+        <a class="nav-link">Music</a>
+      </li>
+      <li (click)="sortCategory('games')" class="nav-item">
+        <a class="nav-link">Games</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 <h2>Projects</h2>
 
 <select (change)="onChange($event.target.value)">
@@ -6,7 +28,7 @@
   <option value="morethan25" >more than $25,000s</option>
 </select>
 
-<div *ngFor="let project of projects | async | filterByGoal:filterByGoal" class="col-12 col-sm-4">
+<div *ngFor="let project of projects | async | filterByGoal:filterByGoal | category:filterByCategory" class="col-12 col-sm-4">
   <div class="card">
     <h3 class="card-title">{{project.title}}</h3>
     <div class="card-body">

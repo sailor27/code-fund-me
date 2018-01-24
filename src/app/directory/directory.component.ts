@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 export class DirectoryComponent implements OnInit {
   projects: FirebaseListObservable<any[]>;
   filterByGoal: string = "allProjects";
+  filterByCategory: string = "allProjects";
 
   constructor(private router: Router, private fbService: FireBaseService) { }
 
@@ -25,7 +26,11 @@ export class DirectoryComponent implements OnInit {
 
    onChange(optionFromMenu) {
      this.filterByGoal = optionFromMenu;
-     console.log(this.filterByGoal);
+   }
+
+   sortCategory(optionFromMenu) {
+     this.filterByCategory = optionFromMenu;
+     console.log(optionFromMenu);
    }
 
 }

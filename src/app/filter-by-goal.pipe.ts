@@ -11,10 +11,8 @@ export class FilterByGoalPipe implements PipeTransform {
     let output= [];
     if(desiredGoal === "lessthan25") {
       for (let i = 0; i<projects.length; i++) {
-        console.log(projects[i].goal);
         if (parseInt(projects[i].goal) < 25000) {
           output.push(projects[i]);
-          console.log("less than 25!");
         }
       }
       return output;
