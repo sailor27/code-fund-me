@@ -1,0 +1,37 @@
+{ "projects": [{
+    "title": "Home LED Kit",
+    "creators": "Jim Bob",
+    "description": "An At-Home Interactive LED Kit",
+    "goal": "45,000",
+    "category": "tech",
+    "plans": "We will do these things",
+    "swag": "Free LED KIT"
+  },
+  {
+    "title": "Cool Kitchen Gadget",
+    "creators": "Martha Stewart",
+    "description": "An At-Home Reverse Juicer",
+    "goal": "45,000",
+    "category": "home",
+    "plans": "We will do these things",
+    "swag": "Free Thing"
+  },
+  {
+    "title": "New Album",
+    "creators": "The Artist and The Clever Band Name",
+    "description": "Help Fund Our Album",
+    "goal": "15,000",
+    "category": "music",
+    "plans": "We will do these things",
+    "swag": "Free Poster and Digital Download"
+  },
+  {
+    "title": "Quirky RPG",
+    "creators": "Valve",
+    "description": "New Game with In-Game Purchases",
+    "goal": "25,000",
+    "category": "games",
+    "plans": "We will do these things",
+    "swag": "Free Game"
+  }]
+}
