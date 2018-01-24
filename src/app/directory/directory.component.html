@@ -1,6 +1,12 @@
 <h2>Projects</h2>
 
-<div *ngFor="let project of projects | async " class="col-12 col-sm-4">
+<select (change)="onChange($event.target.value)">
+  <option value="allProjects" selected="selected" >All Projects</option>
+  <option value="lessthan25">less than $25,000 </option>
+  <option value="morethan25" >more than $25,000s</option>
+</select>
+
+<div *ngFor="let project of projects | async | filterByGoal:filterByGoal" class="col-12 col-sm-4">
   <div class="card">
     <h3 class="card-title">{{project.title}}</h3>
     <div class="card-body">

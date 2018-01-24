@@ -9,6 +9,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { DirectoryComponent } from './directory/directory.component';
 import { routing } from './app.routing';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { FilterByGoalPipe } from './filter-by-goal.pipe';
 
 
 
@@ -26,7 +27,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     DirectoryComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    FilterByGoalPipe
   ],
   imports: [
     BrowserModule,

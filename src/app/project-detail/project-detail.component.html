@@ -1,3 +1,11 @@
-<p>
-  project-detail works!
-</p>
+<div class="card">
+  <h2 class= "card-title">{{(projectToDisplay | async)?.title}}</h2>
+
+  <h4>Creators: {{(projectToDisplay | async)?.creators}}</h4>
+  <h4>{{(projectToDisplay | async)?.description}}</h4>
+
+  <h4>Goal: ${{(projectToDisplay | async)?.goal}}</h4>
+  <h4>Plan: {{(projectToDisplay | async)?.plans}}</h4>
+  <h4>🛍Swag: {{(projectToDisplay | async)?.swag}}</h4>
+  <button class="btn-primary">Fund</button>
+</div>

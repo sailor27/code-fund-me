@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 })
 export class DirectoryComponent implements OnInit {
   projects: FirebaseListObservable<any[]>;
+  filterByGoal: string = "allProjects";
 
   constructor(private router: Router, private fbService: FireBaseService) { }
 
@@ -21,5 +22,10 @@ export class DirectoryComponent implements OnInit {
    goToProject(clickedProject) {
      this.router.navigate(['projects', clickedProject.$key]);
    };
+
+   onChange(optionFromMenu) {
+     this.filterByGoal = optionFromMenu;
+     console.log(this.filterByGoal);
+   }
 
 }

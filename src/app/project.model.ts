@@ -3,7 +3,7 @@ export class Project {
   creators: string;
   description: string;
   category: string;
-  goal: number;
+  goal: string;
   plans: string;
   swag: string;
 }
