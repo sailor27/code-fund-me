@@ -10,6 +10,9 @@ import { FireBaseService } from './../fire-base.service';
   providers: [FireBaseService]
 })
 export class EditProjectComponent implements OnInit {
+
+  //input is for data sent down from directory component.
+  //selectedProject is passed into beginUpdate and beginDelete as the 'project'
   @Input() selectedProject;
 
   constructor(private fbService: FireBaseService) { }

@@ -1,0 +1,54 @@
+{
+  "projects" : {
+    "0" : {
+      "category" : "tech",
+      "creators" : "Jim Bob",
+      "description" : "An At-Home Interactive LED Kit",
+      "goal" : 44999,
+      "image" : "http://www.nowbroadbandtv.com/wp-content/uploads/2017/09/bedroom-lighting-design-ideas.jpg",
+      "plans" : "We will do these things",
+      "swag" : "Free LED KIT",
+      "title" : "Home LED Kit"
+    },
+    "1" : {
+      "category" : "home",
+      "creators" : "Martha Stewart",
+      "description" : "An At-Home Reverse Juicer",
+      "goal" : 34997,
+      "image" : "https://images.unsplash.com/photo-1452724222179-950de6f4a3ce?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3488e50572ed613fd9d1051703d1a02f&auto=format&fit=crop&w=2700&q=80",
+      "plans" : "We will do these things",
+      "swag" : "carrots",
+      "title" : "Reverse Juicer"
+    },
+    "2" : {
+      "category" : "music",
+      "creators" : "The Artist and The Clever Band Name",
+      "description" : "Help Fund Our Album",
+      "goal" : "15000",
+      "image" : "https://images.unsplash.com/photo-1479087734076-99f93ef1acfd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6bd8358e2a0750782a439a3c377b3be8&auto=format&fit=crop&w=2702&q=80",
+      "plans" : "We will do these things",
+      "swag" : "Free Poster and Digital Download",
+      "title" : "New Album"
+    },
+    "3" : {
+      "category" : "games",
+      "creators" : "Valve",
+      "description" : "New Game with In-Game Purchases",
+      "goal" : 24994,
+      "image" : "https://images.unsplash.com/photo-1500995617113-cf789362a3e1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=63cce1cefae4f19979bb3b0e51edf13d&auto=format&fit=crop&w=2700&q=80",
+      "plans" : "We will do these things",
+      "swag" : "Free Game",
+      "title" : "Quirky RPG"
+    },
+    "-L3iuO8EwnJVbVVZc5B9" : {
+      "category" : "tech",
+      "creators" : "Sailor",
+      "description" : "listen to music using your wig",
+      "goal" : "50000",
+      "image" : "https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f8ff9dd85bffba1681747d2cfae3f8b7&auto=format&fit=crop&w=2560&q=80",
+      "plans" : "Attach headphones to wigs",
+      "swag" : "Wig charger",
+      "title" : "Headphone wig"
+    }
+  }
+}
