@@ -23,7 +23,15 @@ export class FireBaseService {
 
   addProject(newProject: Project) {
     this.projects.push(newProject);
+  }
+  updateProject(localProject){
+    let projectInFb = this.getProjectById(localProject.$key);
+    projectInFb.update({ title: localProject.title,  creators: localProject.creators,  description: localProject.description,  category: localProject.category,  goal: localProject.goal,  plans: localProject.plans,  swag: localProject.swag});
+  }
 
+  deleteProject(localProject){
+    let projectInFb = this.getProjectById(localProject.$key);
+    projectInFb.remove();
   }
 
 

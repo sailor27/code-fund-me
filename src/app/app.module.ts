@@ -13,6 +13,8 @@ import { FilterByGoalPipe } from './filter-by-goal.pipe';
 import { CategoryPipe } from './category.pipe';
 import { FundFormComponent } from './fund-form/fund-form.component';
 import { AddProjectComponent } from './add-project/add-project.component';
+import { AdminComponent } from './admin/admin.component';
+import { EditProjectComponent } from './edit-project/edit-project.component';
 
 
 
@@ -34,7 +36,9 @@ export const firebaseConfig = {
     FilterByGoalPipe,
     CategoryPipe,
     FundFormComponent,
-    AddProjectComponent
+    AddProjectComponent,
+    AdminComponent,
+    EditProjectComponent
   ],
   imports: [
     BrowserModule,

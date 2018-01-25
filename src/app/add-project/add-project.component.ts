@@ -18,6 +18,7 @@ export class AddProjectComponent implements OnInit {
   submitForm(title: string, creators: string, description: string, category: string, goal: string, plan: string, swag: string){
     const newProject: Project = new Project(title, creators, description, category, goal, plan, swag);
     this.fbService.addProject(newProject);
+
   }
 
 }

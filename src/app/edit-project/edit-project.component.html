@@ -1,0 +1,34 @@
+<h4>Edit Project</h4>
+
+<label>New Project Title:</label>
+<input [(ngModel)]="selectedProject.title">
+
+<br>
+
+<label>New Project Artist:</label>
+<input [(ngModel)]="selectedProject.creators">
+<br>
+
+<label>New Project Description:</label>
+<input [(ngModel)]="selectedProject.description">
+<br>
+
+<label>New Project Goal:</label>
+<input [(ngModel)]="selectedProject.goal">
+<br>
+
+<label>New Project Category:</label>
+<input [(ngModel)]="selectedProject.category">
+<br>
+
+<label>New Project Plans:</label>
+<input [(ngModel)]="selectedProject.plans">
+<br>
+
+<label>New Project Swag:</label>
+<input [(ngModel)]="selectedProject.swag">
+<hr>
+<button (click)="beginUpdate(selectedProject)">Update</button>
+<button (click)="beginDelete(selectedProject)">Delete</button>
+<br>
+<hr>

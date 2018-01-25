@@ -14,6 +14,8 @@ export class DirectoryComponent implements OnInit {
   filterByGoal: string = "allProjects";
   filterByCategory: string = "allProjects";
 
+  currentRoute: string = this.router.url;
+
   constructor(private router: Router, private fbService: FireBaseService) { }
 
   ngOnInit() {

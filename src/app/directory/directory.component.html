@@ -43,6 +43,11 @@
       <div class="card-body">
         <p class="card-text">{{project.creators}}</p>
         <p class="card-text">{{project.goal}}</p>
+        <div *ngIf="currentRoute === '/admin'">
+              {{project.description}}
+              <hr>
+              <app-edit-project [selectedProject]="project"> </app-edit-project>
+        </div>
         <button type="button" (click)="goToProject(project)">view</button>
       </div>
     </div>
