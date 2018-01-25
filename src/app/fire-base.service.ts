@@ -10,7 +10,6 @@ export class FireBaseService {
 
   constructor(private database: AngularFireDatabase) {
     this.projects = database.list('projects');
-
   }
 
   getProjects(){
@@ -26,7 +25,7 @@ export class FireBaseService {
   }
   updateProject(localProject){
     let projectInFb = this.getProjectById(localProject.$key);
-    projectInFb.update({ title: localProject.title,  creators: localProject.creators,  description: localProject.description,  category: localProject.category,  goal: localProject.goal,  plans: localProject.plans,  swag: localProject.swag});
+    projectInFb.update({ title: localProject.title, image: localProject.image, creators: localProject.creators,  description: localProject.description,  category: localProject.category,  goal: localProject.goal,  plans: localProject.plans,  swag: localProject.swag});
   }
 
   deleteProject(localProject){

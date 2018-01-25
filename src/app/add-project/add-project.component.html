@@ -5,6 +5,12 @@
     <br>
     <input required #newTitle>
   </div>
+  <div>
+    <label>Project Image:</label>
+    <small>Enter an image url</small>
+    <br>
+    <input required #newImage>
+  </div>
 
   <div>
     <label>Project Creator(s):</label>
@@ -43,5 +49,5 @@
     <br>
     <input  required #newSwag>
   </div>
-  <button routerLink=""(click)="submitForm(newTitle.value, newCreators.value, newDescription.value, newCategory.value, newGoal.value, newPlan.value, newSwag.value); newTitle.value=''; newCreators.value=''; newDescription.value=''; newCategory.value=''; newGoal.value=''; newPlan.value=''; newSwag.value='';">Add</button>
+  <button routerLink=""(click)="submitForm(newTitle.value, newImage.value, newCreators.value, newDescription.value, newCategory.value, newGoal.value, newPlan.value, newSwag.value); newTitle.value=''; newImage.value=''; newCreators.value=''; newDescription.value=''; newCategory.value=''; newGoal.value=''; newPlan.value=''; newSwag.value='';">Add</button>
 </div>
