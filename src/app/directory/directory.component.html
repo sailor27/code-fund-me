@@ -16,25 +16,36 @@
       <li (click)="sortCategory('games')" class="nav-item">
         <a class="nav-link">Games</a>
       </li>
+      <li routerLink="add-project"class="nav-item">
+        <a class="nav-link">Add a Project</a>
+      </li>
     </ul>
   </div>
 </nav>
 
 <h2>Projects</h2>
 
-<select (change)="onChange($event.target.value)">
-  <option value="allProjects" selected="selected" >All Projects</option>
-  <option value="lessthan25">less than $25,000 </option>
-  <option value="morethan25" >more than $25,000s</option>
-</select>
+<div class="row">
+  <div class="form-group mx-auto">
+    <select (change)="onChange($event.target.value)">
+      <option value="allProjects" selected="selected" >All Projects</option>
+      <option value="lessthan25">less than $25,000 </option>
+      <option value="morethan25" >more than $25,000s</option>
+    </select>
+  </div>
+</div>
 
-<div *ngFor="let project of projects | async | filterByGoal:filterByGoal | category:filterByCategory" class="col-12 col-sm-4">
-  <div class="card">
-    <h3 class="card-title">{{project.title}}</h3>
-    <div class="card-body">
-      <p>{{project.creators}}</p>
-      <p>{{project.goal}}</p>
-      <button type="button" (click)="goToProject(project)">view</button>
+<div class="row">
+  <div *ngFor="let project of projects | async | filterByGoal:filterByGoal | category:filterByCategory" class="col-12 col-sm-4">
+    <div class="card">
+      <img class="card-img-top"src="https://picsum.photos/200/?random" alt="Project Image">
+      <h3 class="card-title">{{project.title}}</h3>
+      <div class="card-body">
+        <p class="card-text">{{project.creators}}</p>
+        <p class="card-text">{{project.goal}}</p>
+        <button type="button" (click)="goToProject(project)">view</button>
+      </div>
     </div>
   </div>
+
 </div>

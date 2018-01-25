@@ -1,0 +1,47 @@
+<h3>Add New Project to Fund</h3>
+<div>
+  <div>
+    <label>Project Title:</label>
+    <br>
+    <input #newTitle>
+  </div>
+
+  <div>
+    <label>Project Creator(s):</label>
+    <br>
+    <input #newCreators>
+  </div>
+
+  <div>
+    <label>Project Description:</label>
+    <br>
+    <textarea #newDescription></textarea>
+  </div>
+  <div>
+    <label>Project Category:</label>
+    <br>
+    <select #newCategory>
+      <option value="tech" selected="selected">Tech</option>
+      <option value="home">Home </option>
+      <option value="music" >Music</option>
+      <option value="games" >Games</option>
+    </select>
+  </div>
+  <div>
+    <label>Project Goal:</label>
+    <small>(4000 = $4,000)</small>
+    <br>
+    <input #newGoal>
+  </div>
+  <div>
+    <label>Describe your project plan:</label>
+    <br>
+    <input #newPlan>
+  </div>
+  <div>
+    <label>What swag will you give to your funders?</label>
+    <br>
+    <input #newSwag>
+  </div>
+  <button (click)="submitForm(newTitle.value, newCreators.value, newDescription.value, newCategory.value, newGoal.value, newPlan.value, newSwag.value)">Add</button>
+</div>

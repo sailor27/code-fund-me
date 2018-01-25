@@ -12,6 +12,7 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
 import { FilterByGoalPipe } from './filter-by-goal.pipe';
 import { CategoryPipe } from './category.pipe';
 import { FundFormComponent } from './fund-form/fund-form.component';
+import { AddProjectComponent } from './add-project/add-project.component';
 
 
 
@@ -32,7 +33,8 @@ export const firebaseConfig = {
     ProjectDetailComponent,
     FilterByGoalPipe,
     CategoryPipe,
-    FundFormComponent
+    FundFormComponent,
+    AddProjectComponent
   ],
   imports: [
     BrowserModule,
