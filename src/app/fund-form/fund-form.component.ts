@@ -27,6 +27,11 @@ export class FundFormComponent implements OnInit {
     this.projectToDisplay = this.fbService.getProjectById(this.projectId);
   }
 
+  onPayment(amount) {
+
+    alert("Thank you! Your Payment of $" + amount + " USD has been submitted.");
+  }
+
 
 
 }
