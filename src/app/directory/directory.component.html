@@ -1,4 +1,4 @@
-<nav class="navbar nav navbar-expand-sm navbar-light bg-light">
+<nav class="navbar nav navbar-expand-sm navbar-dark bg-dark justify-content-center">
   <div id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li (click)="sortCategory('')" class="nav-item active">
@@ -37,21 +37,21 @@
 </div>
 
 <div class="row">
-  <div *ngFor="let project of projects | async | filterByGoal:filterByGoal | category:filterByCategory" class="col-xl-3 col-lg-4 col-md-6 col-xs-12">
+  <div [class]="ifAdmin(project)" *ngFor="let project of projects | async | filterByGoal:filterByGoal | category:filterByCategory" >
     <div class="card">
 
       <img class="card-img-top"src="{{project.image}}" alt="Project Image">
 
       <h3 class="card-title">{{project.title}}</h3>
       <div class="card-body">
-        <p class="card-text">{{project.creators}}</p>
+        <p class="card-text">From: {{project.creators}}</p>
         <p class="card-text">${{project.goal}} left until goal</p>
         <div *ngIf="currentRoute === '/admin'">
               {{project.description}}
               <hr>
               <app-edit-project [selectedProject]="project"> </app-edit-project>
         </div>
-        <button type="button" (click)="goToProject(project)">view</button>
+        <button class="btn btn-dark"type="button" (click)="goToProject(project)">View</button>
       </div>
     </div>
   </div>

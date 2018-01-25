@@ -1,5 +1,28 @@
+.outer {
+  margin: 10px 0px;
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  button{
+
+    bottom: 1px;;
+  }
+
+}
+h2{
+  text-align: center;
+  margin-top: 10px;
+}
+
 .square {
   width: 50%;
   padding-top: 50%;
 
+}
+
+.adminClass {
+  // background-color: grey;
 }

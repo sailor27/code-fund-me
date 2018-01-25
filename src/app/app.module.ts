@@ -15,6 +15,7 @@ import { FundFormComponent } from './fund-form/fund-form.component';
 import { AddProjectComponent } from './add-project/add-project.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditProjectComponent } from './edit-project/edit-project.component';
+import { AlertModule } from 'ngx-bootstrap/alert';
 
 
 
@@ -46,7 +47,8 @@ export const firebaseConfig = {
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    routing
+    routing,
+    AlertModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

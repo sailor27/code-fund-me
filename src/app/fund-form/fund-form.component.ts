@@ -33,7 +33,7 @@ export class FundFormComponent implements OnInit {
     alert("Thank you! Your Payment of $" + amount + " to " + this.projectToDisplay.creators + " has been submitted.");
 
     this.projectToDisplay.goal = ((parseInt(this.projectToDisplay.goal)) - amount );
-    
+
     this.fbService.updateProject(this.projectToDisplay);
   }
 

@@ -33,5 +33,11 @@ export class DirectoryComponent implements OnInit {
    sortCategory(optionFromMenu) {
      this.filterByCategory = optionFromMenu;
    }
-
+   ifAdmin(project){
+     if (this.currentRoute === "/admin"){
+       return "adminClass outer";
+     } else {
+       return "outer col-xl-3 col-lg-4 col-md-6 col-xs-12"
+     }
+   }
 }
