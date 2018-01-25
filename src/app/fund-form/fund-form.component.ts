@@ -24,14 +24,18 @@ export class FundFormComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.projectId = urlParameters['id'];
     });
-    this.projectToDisplay = this.fbService.getProjectById(this.projectId);
+    this.fbService.getProjectById(this.projectId).subscribe(arg => {
+      this.projectToDisplay = arg;
+    })
   }
 
   onPayment(amount) {
+    alert("Thank you! Your Payment of $" + amount + " to " + this.projectToDisplay.creators + " has been submitted.");
 
-    alert("Thank you! Your Payment of $" + amount + " USD has been submitted.");
+    this.projectToDisplay.goal = ((parseInt(this.projectToDisplay.goal)) - amount );
+    
+    this.fbService.updateProject(this.projectToDisplay);
   }
-
 
 
 }

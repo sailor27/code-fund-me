@@ -32,7 +32,6 @@ export class DirectoryComponent implements OnInit {
 
    sortCategory(optionFromMenu) {
      this.filterByCategory = optionFromMenu;
-     console.log(optionFromMenu);
    }
 
 }

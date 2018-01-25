@@ -27,10 +27,11 @@
 
 <div class="row">
   <div class="form-group mx-auto">
+    <label>Filter by $ left until goal met:</label>
     <select (change)="onChange($event.target.value)">
       <option value="allProjects" selected="selected" >All Projects</option>
-      <option value="lessthan25">less than $25,000 </option>
-      <option value="morethan25" >more than $25,000</option>
+      <option value="lessthan25">less than $25,000 left</option>
+      <option value="morethan25" >more than $25,000 left</option>
     </select>
   </div>
 </div>
@@ -44,7 +45,7 @@
       <h3 class="card-title">{{project.title}}</h3>
       <div class="card-body">
         <p class="card-text">{{project.creators}}</p>
-        <p class="card-text">${{project.goal}}</p>
+        <p class="card-text">${{project.goal}} left until goal</p>
         <div *ngIf="currentRoute === '/admin'">
               {{project.description}}
               <hr>

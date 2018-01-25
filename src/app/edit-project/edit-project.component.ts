@@ -18,7 +18,6 @@ export class EditProjectComponent implements OnInit {
   }
   beginUpdate(project){
     this.fbService.updateProject(project);
-    console.log(project.image);
   }
 
   beginDelete(project){
