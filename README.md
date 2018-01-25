@@ -1,27 +1,62 @@
-# Crowdfunding
+# CodeFundMe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+A crowd-funding platform built using Angular 2 and Firebase.
 
-## Development server
+### _By Ginger Lee Kretschmer, Sailor Winkelman, and Sam Kissee_
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. _`$ git clone` [] _
 
-## Build
+2. _`$ cd code-fund-me`_
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+3.  _`$ npm install -g angular-cli`_
 
-## Running unit tests
+4. _Add Firebase API Key (instructions in next section)_
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+5. _`$ ng serve --open`_
 
-## Running end-to-end tests
+## Firebase API key
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+This app requires the use a Firebase api key to access Firebase database features. You can acquire one of your own to use when running this project by visiting the [Firebase Website](https://firebase.google.com) and signing up for an account before taking the following steps:
 
-## Further help
+* Add a new project (you'll have to name it).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Once your new project is created, click the gear icon next to Project Overview to access your project settings.
+
+* Click the button that says "Add Firebase to your web app" and copy the information from the modal window that pops up.
+
+* Create a file called `api-keys.ts` in the `src/app/` directory and add the following code with your API key information in place of the 'xxx's:
+```
+export var masterFirebaseConfig = {
+  apiKey: "xxxx",
+  authDomain: "xxxx.firebaseapp.com",
+  databaseUrl: "https://xxx.firebaseio.com",
+  storageBucket: "xxxx.appspot.com",
+  messageingSenderId: "xxxx"
+};
+```
+
+## User Story
+
+| User Action |      Application Notes      |  
+|----------|:-------------:|
+| See a list of all projects, ideas, and charitable acts that are seeking funding. |   |
+| Click a project to see more details|  |
+| Show project details on funding page | |
+| Filter projects by funding goal and category| blah|
+| Click button to go to project funding form| blah|
+| Create new project to fund | blah|
+| (Admin) Add, Update, or Delete projects | blah|
+| View and create different types of things to fund (charities, projects, etc.) | blah|
+| View different types of things (charities, projects, etc.) on different pages | blah|
+
+## Technologies Used
+* JavaScript (ES6)
+* Angular 2
+* Node
+* HTML
+* SASS
+* Firebase
+* Angular-CLI
