@@ -30,13 +30,13 @@
     <select (change)="onChange($event.target.value)">
       <option value="allProjects" selected="selected" >All Projects</option>
       <option value="lessthan25">less than $25,000 </option>
-      <option value="morethan25" >more than $25,000s</option>
+      <option value="morethan25" >more than $25,000</option>
     </select>
   </div>
 </div>
 
 <div class="row">
-  <div *ngFor="let project of projects | async | filterByGoal:filterByGoal | category:filterByCategory" class="col-12 col-sm-4">
+  <div *ngFor="let project of projects | async | filterByGoal:filterByGoal | category:filterByCategory" class="col-xl-3 col-lg-4 col-md-6 col-xs-12">
     <div class="card">
 
       <img class="card-img-top"src="{{project.image}}" alt="Project Image">
@@ -44,7 +44,7 @@
       <h3 class="card-title">{{project.title}}</h3>
       <div class="card-body">
         <p class="card-text">{{project.creators}}</p>
-        <p class="card-text">{{project.goal}}</p>
+        <p class="card-text">${{project.goal}}</p>
         <div *ngIf="currentRoute === '/admin'">
               {{project.description}}
               <hr>

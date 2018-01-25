@@ -10,10 +10,12 @@
 }
 
 .card {
-  text-align: center;
   margin-bottom: 65px;
   padding: 5px 0px 5px 5px;
   height: 90%;
+  .card-title{
+    text-align: center;
+  }
 }
 
 img {

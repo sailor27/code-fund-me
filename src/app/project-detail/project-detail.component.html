@@ -2,10 +2,10 @@
   <h2 class= "card-title">{{(projectToDisplay | async)?.title}}</h2>
   <img class="card-img-top"src="{{(projectToDisplay | async)?.image}}" alt="Project Image">
   <h4>Creators: {{(projectToDisplay | async)?.creators}}</h4>
-  <h4>{{(projectToDisplay | async)?.description}}</h4>
+  <h4> Description: {{(projectToDisplay | async)?.description}}</h4>
 
   <h4>Goal: ${{(projectToDisplay | async)?.goal}}</h4>
   <h4>Plan: {{(projectToDisplay | async)?.plans}}</h4>
-  <h4>🛍Swag: {{(projectToDisplay | async)?.swag}}</h4>
+  <h4>Swag: {{(projectToDisplay | async)?.swag}}</h4>
   <button (click)="goToFunding(projectToDisplay)"class="btn-primary">Fund</button>
 </div>
