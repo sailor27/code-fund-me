@@ -1,0 +1,14 @@
+
+input, textarea, select{
+  width: 80%;
+  &:focus{
+    background-color: rgba(212, 115, 242, 1);
+    box-shadow: 0 0 5px 2px rgba(212, 115, 242, 0.69);
+    color: white;
+
+  }
+}
+button{
+  width: 25%;
+  margin: 0px auto;
+}

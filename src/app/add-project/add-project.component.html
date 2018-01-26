@@ -1,25 +1,25 @@
 <div class="card">
   <h3 class="card-title">Add New Project to Fund</h3>
   <div>
-    <div>
+    <div class="form-group">
       <label>Project Title:</label>
       <br>
       <input required #newTitle>
     </div>
-    <div>
+    <div class="form-group">
       <label>Project Image:</label>
       <small>Enter an image url</small>
       <br>
       <input required #newImage>
     </div>
 
-    <div>
+    <div class="form-group">
       <label>Project Creator(s):</label>
       <br>
       <input  required #newCreators>
     </div>
 
-    <div>
+    <div class="form-group">
       <label>Project Description:</label>
       <br>
       <textarea required  #newDescription></textarea>
@@ -34,23 +34,23 @@
         <option value="games" >Games</option>
       </select>
     </div>
-    <div>
+    <div class="form-group">
       <label>Project Goal:</label>
       <small>(4000 = $4,000)</small>
       <br>
       <input required  #newGoal>
     </div>
-    <div>
+    <div class="form-group">
       <label>Describe your project plan:</label>
       <br>
       <input  required #newPlan>
     </div>
-    <div>
+    <div class="form-group">
       <label>What swag will you give to your funders?</label>
       <br>
       <input  required #newSwag>
     </div>
-    <button routerLink=""(click)="submitForm(newTitle.value, newImage.value, newCreators.value, newDescription.value, newCategory.value, newGoal.value, newPlan.value, newSwag.value); newTitle.value=''; newImage.value=''; newCreators.value=''; newDescription.value=''; newCategory.value=''; newGoal.value=''; newPlan.value=''; newSwag.value='';">Add</button>
+    <button class="btn btn-dark" routerLink=""(click)="submitForm(newTitle.value, newImage.value, newCreators.value, newDescription.value, newCategory.value, newGoal.value, newPlan.value, newSwag.value); newTitle.value=''; newImage.value=''; newCreators.value=''; newDescription.value=''; newCategory.value=''; newGoal.value=''; newPlan.value=''; newSwag.value='';">Add</button>
   </div>
 
 </div>
