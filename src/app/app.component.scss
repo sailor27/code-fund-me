@@ -3,4 +3,7 @@ h1 {
   margin: 15px 0px;
   color: black;
   text-align: center;
+  &:hover{
+    color: rgba(212, 115, 242, 1);
+  }
 }

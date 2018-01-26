@@ -8,9 +8,9 @@
     </div>
     <div class="form-group">
       <label>Project Image:</label>
-      <small>Enter an image url</small>
+      <small>Enter an image url that best represents your project.</small>
       <br>
-      <input required #newImage>
+      <input required #newImage placeholder="https://images.unsplash.com/photo-142">
     </div>
 
     <div class="form-group">
@@ -18,13 +18,13 @@
       <br>
       <input  required #newCreators>
     </div>
-
     <div class="form-group">
       <label>Project Description:</label>
+      <small>Let potential funders know more about your project.</small>
       <br>
       <textarea required  #newDescription></textarea>
     </div>
-    <div>
+    <div class="form-group">
       <label>Project Category:</label>
       <br>
       <select required  #newCategory>
@@ -36,7 +36,7 @@
     </div>
     <div class="form-group">
       <label>Project Goal:</label>
-      <small>(4000 = $4,000)</small>
+      <small>(Formatting is important. 4000 = $4,000)</small>
       <br>
       <input required  #newGoal>
     </div>

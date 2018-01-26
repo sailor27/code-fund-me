@@ -34,3 +34,10 @@ a {
 body {
   // background-color: lightgrey;
 }
+
+.btn-dark {
+  &:hover{
+    background-color:rgba(212, 115, 242, 1);
+    border: 2px solid black;
+  }
+}
